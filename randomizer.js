@@ -47,7 +47,7 @@ const assignClass = (char) => {
 const assignStats = () => {
     console.log('**********************************************');
     console.log('Starting character stats:');
-    for (let stat in stats) {
+    for (let stat in character.stats) {
         console.log(stat +': '+ statRandom());
     }
 };
