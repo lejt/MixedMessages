@@ -1,26 +1,11 @@
 /*
 Mixed Messages Project 
-task: MMORPG RANDOM JOB ASSIGNMENT GENERATOR
-coder: lejt
+Task: MMORPG themed random character spec generator
+Coder: lejt
+Date: 10/19/2021
 */
 
-// think of different categories to output lines of random output
-// job, starting stats, weapon, passive skill, elemental affinity
-
-// list of all elements in which the randomizer can pull items out of
-
-const job = ['job', 'knight', 'mage', 'archer', 'mercenary', 'adventurer', 'merchant', 'assassin'];
-const weapon = ['weapon', 'one-handed sword', 'two-handed claymore', 'compound bow', 'magic tome', 'spear', 'knuckles', 'dagger'];
-const element = ['element', 'white magic', 'dark magic', 'wind', 'earth', 'fire', 'water', 'ice', 'electricity'];
-const passive = ['passsive', 'energy drain', 'increase healing', 'increase mana regen', 'increase crit strike', 'reduce dmg taken', 'analyze', 'equipment creation', 'potion creation'];
-const stats = {
-    str: undefined,
-    agi: undefined,
-    dex: undefined,
-    int: undefined,
-    vit: undefined
-};
-
+//List of options for each category
 const character = {
     'job': ['knight', 'mage', 'archer', 'mercenary', 'adventurer', 'merchant', 'assassin'],
     'weapon': ['one-handed sword', 'two-handed claymore', 'compound bow', 'magic tome', 'spear', 'knuckles', 'dagger'],
@@ -71,9 +56,6 @@ const farewell = () => {
     console.log('**********************************************');
     console.log('Good luck on your life in Leyvaria!')
 }
-
-
-
 
 assignClass(character);
 assignStats();
